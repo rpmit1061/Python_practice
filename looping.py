@@ -1,3 +1,30 @@
+command = ""
+started = False
+
+while True:
+    command = input(">>")
+    if command.lower() == "start":
+        if started:
+            print("Car is already Started")
+        else:
+            started = True
+            print("Car is started")
+    elif command.lower() == "stop":
+        if not started:
+            print("Car is already Stoped")
+        else:
+            started = False
+            print("Car is stoped")
+    elif command.lower() == "help":
+        print("""
+                For Start car Type start.
+                For Stop Stop car type stop
+        """)
+    elif command.lower() == "quit":
+        break
+    else:
+        print("I don't Understand what do you want.")
+
 secret_number = 9
 guess_count = 0
 guess_limit = 3
@@ -9,34 +36,10 @@ while guess_count < guess_limit:
         break
     else:
         print('Sorry you failed')
-Car Code
-command = ""
-started = False
-while True:
-    command = input(">>")
-    if command.lower() == "start":
-        if started:
-            print("car is already Started!")
-        else:
-            started = True
-            print("car started...")
-    elif command.lower() == "stop":
-        if not started:
-            print("card is already stopped!")
-        else:
-            started = False
-            print("Car Stoped...")
-    elif command.lower() == "help":
-        print("""
-        start - to start the car
-        stop - to stop the car
-        quit - to quit""")
-    elif command.lower() == "quit":
-        break
-    else:
-        print("I don't understand what do you want")
+# Car Code
 
-For Loop
+
+# For Loop
 prices = [10,20,30]
 total = 0
 for price in prices:
@@ -60,7 +63,7 @@ for number in numbers:
     if number > max:
         max = number
 print(max)
-2-D list
+# 2-D list
 matrix = [
     [1,2,3],
     [4,5,6],
